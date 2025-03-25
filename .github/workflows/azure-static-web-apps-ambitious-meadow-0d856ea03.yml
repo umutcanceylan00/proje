@@ -28,6 +28,9 @@ jobs:
         uses: actions/github-script@v6
         id: idtoken
         with:
+       
+  app_build_command: 'npm run build'
+
            script: |
                const coredemo = require('@actions/core')
                return await coredemo.getIDToken()
